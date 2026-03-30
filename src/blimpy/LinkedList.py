@@ -4,10 +4,6 @@ A basic linked list implementation conforming to the Python list API.
 It can be used as a drop-in replacement for the built-in list class.
 Created on Jan 29, 2012
 '''
-from __future__ import print_function
-from builtins import str
-from builtins import range
-from builtins import object
 
 __version__    = '1.1.0'
 __author__     = 'Ted Ralphs, Aykut Bulut (ted@lehigh.edu, ayb211@lehigh.edu)'

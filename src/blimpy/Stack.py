@@ -1,10 +1,6 @@
 '''
 A basic stack implementation using a linked list.
 '''
-from __future__ import print_function
-from __future__ import absolute_import
-from builtins import range
-from builtins import object
 
 __version__    = '1.1.0'
 __author__     = 'Aykut Bulut, Ted Ralphs (ayb211@lehigh.edu,ted@lehigh.edu)'
