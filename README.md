@@ -1,7 +1,5 @@
 # BLImPy 2.0
 
-## Now with Python 3 support!
-
 [![DOI](https://zenodo.org/badge/15832380.svg)](https://zenodo.org/badge/latestdoi/15832380)
 
 BLImPy (Basic List Implementation in Python) is a basic implementation of a
