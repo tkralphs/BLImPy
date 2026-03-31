@@ -109,13 +109,13 @@ class LinkedList(object):
         if self.pop(position) == None:
             raise KeyError("Index out of bounds")
 
-    def insert(self, position, item):
-        ''' class method that inserts item to the given position
-        pre: self, position, item
-        position should not be greater than length of the list'''
+    def insert(self, index, item):
+        ''' class method that inserts item to the given index
+        pre: self, index, item
+        index should not be greater than length of the list'''
         previous = None
         current = self.head
-        for i in range(self.length - position):
+        for i in range(self.length - index):
             previous = current
             current = current.getNext()
         tmp = Node(item, current)
@@ -124,6 +124,11 @@ class LinkedList(object):
         else:
             previous.setNext(tmp)
         self.length += 1
+
+    def __setitem__(self, index, item):
+        ''' wrapper to allow Linked List to function as an
+        array'''
+        self.insert(index, item)
 
     def peek(self, index = None):
         ''' class method that retrieves, but does not remove,
