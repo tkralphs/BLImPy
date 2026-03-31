@@ -15,7 +15,7 @@ authors = [
 requires-python = ">=3.6"
 
 [project.urls]
-Homepage = "http://projects.coin-or.org/CoinBazaar/wiki/Projects/GIMPy"
+Homepage = "https://github.com/tkralphs/BLImPy"
 Documentation = "https://tkralphs.github.io/BLImPy"
 Repository = "https://github.com/tkralphs/BLImPy"
 
