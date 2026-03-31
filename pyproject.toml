@@ -12,7 +12,7 @@ authors = [
     { name = "Aykut Bulut" },
     { name = "Ted Ralphs", email = "ted@lehigh.edu" },
 ]
-requires-python = ">=3.6"
+requires-python = ">=3.10"
 
 [project.urls]
 Homepage = "https://github.com/tkralphs/BLImPy"
@@ -25,6 +25,12 @@ packages = ["coinor", "coinor.blimpy"]
 [tool.setuptools.package-dir]
 "coinor" = "src"
 "coinor.blimpy" = "src/blimpy"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest >= 8.0.0",
+    "ruff >= 0.3.0",
+]
 
 [pytest]
 testpaths = ["tests"]
