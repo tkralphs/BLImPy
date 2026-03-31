@@ -25,3 +25,7 @@ packages = ["coinor", "coinor.blimpy"]
 [tool.setuptools.package-dir]
 "coinor" = "src"
 "coinor.blimpy" = "src/blimpy"
+
+[pytest]
+testpaths = ["tests"]
+addopts = ["--import-mode=importlib"]
