@@ -26,12 +26,12 @@ packages = ["coinor", "coinor.blimpy"]
 "coinor" = "src"
 "coinor.blimpy" = "src/blimpy"
 
-[tool.uv]
-dev-dependencies = [
+[dependency-groups]
+dev = [
     "pytest >= 8.0.0",
     "ruff >= 0.3.0",
 ]
 
-[pytest]
+[tool.pytest]
 testpaths = ["tests"]
 addopts = ["--import-mode=importlib"]
